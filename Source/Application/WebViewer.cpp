@@ -1054,7 +1054,7 @@ Setting &WebViewer::Set(std::string option, std::string arg)
 	}
 	else if (option == "HISTORY")
 	{
-		ships.setTimeHistory(Util::Parse::Integer(arg, 5, 12 * 3600, option));
+		ships.setTimeHistory(Util::Parse::Integer(arg, 5, 24 * 3600, option));
 	}
 	else if (option == "FILE")
 	{
